@@ -1,0 +1,74 @@
+// user register
+POST http://localhost:2800/register HTTP/1.1
+content-type: application/json
+
+{
+
+    "email": "1@23.com",
+    "password": "123456"
+}
+###
+
+// login success
+POST http://localhost:2800/login HTTP/1.1
+content-type: application/json
+
+{
+
+    "email": "1@2.com",
+    "password": "123456"
+}
+###
+
+// login fail with wrong password
+POST http://localhost:2800/login HTTP/1.1
+content-type: application/json
+
+{
+
+    "email": "1@2.com",
+    "password": "123"
+}
+###
+
+// login fail with wrong email
+POST http://localhost:2800/login HTTP/1.1
+content-type: application/json
+
+{
+
+    "email": "1@3.com",
+    "password": "123"
+}
+###
+
+// -----Task APIs Test-----
+// create a task for the user with id=1
+POST http://localhost:2800/tasks/1 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "task4",
+    "description": "task4 description"
+}
+###
+
+// update the task with id=1 for the user with id=1
+PUT http://localhost:2800/tasks/1/1 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "task4",
+    "description": "task4 description updated"
+}
+###
+
+// delete the task with id=1 for the user with id=1
+DELETE http://localhost:2800/tasks/1/1 HTTP/1.1
+
+###
+
+// get all tasks for the user with id=1
+GET http://localhost:2800/tasks/1 HTTP/1.1
+
+###
