@@ -15,6 +15,19 @@ html {
   width: 100%;
   min-height: 100%;
   justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.ant-layout-content {
+  margin: 30px 24px;
+  background: linear-gradient(to bottom, #dfedd5, #bfd8c6, #8c9c94);
+  background-size: 400% 400%;
+}
+
+.ant-layout-content ::before {
+  content: "";
+  background: url(https://grainy-gradients.vercel.app/noise.svg);
+  mix-blend-mode: color-dodge;
 }
 
 .logo {

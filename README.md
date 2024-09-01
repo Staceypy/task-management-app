@@ -2,7 +2,7 @@
 
 # Overview
 
-I've developed a fully functional app that delivers on all your requirements. While time constraints may have limited some detailed considerations, I've adhered to best practices and implemented responsive web design principles.
+A fully-functional task app that supports user registration, login, and task management, including adding and updating tasks.
 
 Built with Node.js, React, and TypeScript, the app delivers a user-friendly experience.
 
@@ -10,7 +10,7 @@ A 1-minute demo of the app can be found in the following video link: https://dri
 
 # Backend
 
-In the backend, I developed a server using Express and MySQL, listening on port 2800. All required APIs have been tested and are functioning properly.
+The backend server runs through Express and MySQL, listening on port 2800. 
 
 to run backend,
 
@@ -33,7 +33,7 @@ npm run watch
 
 # Frontend
 
-My App was based on Ant Design UI library. I didn't do much UI design and advancement.
+Frontend app was based on React and using Ant Design UI library. 
 
 To run front end,
 
@@ -43,6 +43,4 @@ cd task-manager
 npm start
 ```
 
-- For login (authentication), I currently use session storage to keep user logged in. A more robust approach would be to  use JWT.
-- For register, some validation is implemented, but validating the given format of email and password is missing.
-- Adding a new task, update a task and view tasks are implemented and tested.
+- For login (authentication), currently use session storage to keep user logged in. 

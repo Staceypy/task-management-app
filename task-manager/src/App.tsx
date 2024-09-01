@@ -74,9 +74,15 @@ const App: React.FC = () => {
   return (
     <ConfigProvider
       theme={{
+        // algorithm: theme.darkAlgorithm,
         token: {
           // colorPrimary: "#00b96b",
           borderRadius: 2,
+          colorPrimary: "#779dd2",
+          colorInfo: "#779dd2",
+          colorSuccess: "#54c67c",
+          colorBgBase: "#f9f9f1",
+          colorTextBase: "#072043",
 
           colorBgContainer: "#FAFAF5",
         },
@@ -104,7 +110,6 @@ const App: React.FC = () => {
             </div>
 
             <Menu
-              theme="light"
               onClick={onClick}
               mode="inline"
               defaultSelectedKeys={["/"]}
@@ -121,7 +126,7 @@ const App: React.FC = () => {
                 margin: "24px 16px",
                 padding: 24,
                 minHeight: 280,
-                background: colorBgContainer,
+                // background: colorBgContainer,
                 borderRadius: borderRadiusLG,
               }}
             >
